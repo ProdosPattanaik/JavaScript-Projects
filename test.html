@@ -9,6 +9,7 @@
             background: red;
             width: 1000px;
             height: 550px;
+            display: none;
         }
     </style>
 </head>
@@ -20,13 +21,25 @@
 
     <script>
         let content=document.querySelector(".container")
-        content.addEventListener("mouseenter",()=>{
-        content.style.background="blue";
-        });
+        // content.addEventListener("mouseenter",()=>{
+        // content.style.background="blue";
+        // });
 
-        content.addEventListener("mouseleave",()=>{
-            content.style.background="white"
-        })
+        // content.addEventListener("mouseleave",()=>{
+        //     content.style.background="white"
+        // })
+
+        let body=document.body
+        body.addEventListener("contextmenu",()=>{
+            console.log("welcome");
+            
+        }
+    )
+
+    //display code
+    window.addEventListener("load",()=>{
+    content.style.display="block"
+    })
     </script>
 </body>
 </html>
