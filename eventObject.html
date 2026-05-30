@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Objects</title>
+</head>
+<body>
+    <h2>Event Objects</h2>
+    <div class="main">
+        <h3>Welcome to JS Events</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, doloribus.</p>
+
+        <button>Submit</button>
+    </div>
+
+    <script>
+        let mainBody=document.querySelector(".main")
+        mainBody.addEventListener("click",(e)=>{
+            // console.log(e.type);
+            // console.log(e.target);
+            // console.log(e.currentTarget);
+            if(EventTarget.tagName="button"){
+                alert("Submitted")
+            }
+        })
+    </script>
+</body>
+</html>
